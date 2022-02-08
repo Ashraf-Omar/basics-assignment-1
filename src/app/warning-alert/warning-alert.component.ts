@@ -2,10 +2,13 @@ import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-warning-alert',
-  template: `<h6 class="warning-text">Warning: {{message}}</h6>`,
+  template: `<p class="warning-text">Warning: {{message}}</p>`,
   styles: [`
     .warning-text {
-      color: darkorange;
+      padding: 2rem;
+      background-color: lightpink;
+      border: 1px solid orangered;
+      color: darkred;
     }
   `]
 })
